@@ -17,4 +17,4 @@ The images for the deployed applications are also links.
 Pressing the navbar links will scroll to the appropriate section of the Application
 
 <img src="assets/readmeimage.png">
-<a href="https://batorasan.github.io/Portfolio/">
+<a href="https://batorasan.github.io/Portfolio/"> This is a link to deployed application</a>
