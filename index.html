@@ -1,27 +1,92 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- Design is responsive to viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">Walter Armstrong's Portfolio</label>
+    <section id="home"></section>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">My Portfolio</label>
+        <ul>
+          <!-- Buttons navigate properly to correct section of application -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#deployed-applications">Deployed Applications</a></li>
+          <li><a href="#upcoming-projects">Upcoming Projects</a></li>
+          <li><a href="#contact-information">Contact Information</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="about-me">
+      <h1>About Me</h1>
+      <div class="box-container">
+        <div class="box-1">
+      <img src="assets/placeholder.png" 
+      alt="Placeholder" />
+        </div>
+      </div>
+      <p>
+        My name is Walter Armstrong. I am a currently a student attending
+        Northwestern Academy Coding Boot Camp.
+      </p>
+    </section>
+    <section id="deployed-applications">
+      <h2>Deployed Applications</h2>
+      <p>Here is a link to some of my deployed applications.</p>
+      <!-- Images are also links -->
+    <div class="box-container">
+      <div class="box-1">
+        <a href="https://mail.google.com/mail/u/">
+          <img src="assets/download (2).jpg" alt="Application 1">
+      </a>
+      </div>
+      <div class="box-container2">
+      <div class="box-2">
+        <a href="https://www.google.com/imghp?hl=en&ogbl">
+          <img src="assets/download (3).jpg" alt="Application 2">
+      </a>
+      </div>
+      <div class="box-3">
+        <a href="https://www.google.com/">
+          <img src="assets/download (4).jpg" alt="Application 3">
+        </a>
+      </div>
+    </div>
+    </div>
+    </section>
+    <section id="upcoming-projects">
+      <h3>Upcoming Projects</h3>
+      <p>These are some of the projects that I'm currently working on.</p>
+      <div class="box-container">
+        <div class="box-1">
+      <img src="assets/download (5).jpg" alt="Upcoming Projects">
+      </div>
+    </div>
+    </section>
+    <section id="contact-information">
+      <h4>Contact Information</h4>
+      <p>These are the places that you can contact me.</p>
       <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Feedback</a></li>
+        <li>•Email: waltva0@gmail.com</li>
+        <li>•Twitter: Don't have one</li>
+        <li>•Facebook: Nice try</li>
+        <li>•Youtube: Nope</li>
       </ul>
-    </nav>
-    <section></section>
+      <div class="box-container">
+      <div class="box-1">
+      <img src="assets/download (6).jpg" alt="Contact Information">
+    </div>
+    </div>
+    </section>
   </body>
 </html>

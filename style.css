@@ -6,8 +6,14 @@
     box-sizing: border-box;
   }
   body{
-    font-family: montserrat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+  /* Headers for search engine optimization */
+  h1, h2, h3, h4{
+      font-size: 28px;
+      font-family: montserrat;
+  }
+  /* Responsive navbar */
   nav{
     background: #0082e6;
     height: 80px;
@@ -38,7 +44,7 @@
   }
   a.active,a:hover{
     background: #1b9bff;
-    transition: .5s;
+
   }
   .checkbtn{
     font-size: 30px;
@@ -51,6 +57,47 @@
   }
   #check{
     display: none;
+  }
+  /* Flex containers for images for the purposes of responsive designs. */
+  .box-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .box-container2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .box-1, .box-2, .box-3{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+  }
+  .box-1{
+
+  }
+  .box-2, .box-3{
+    flex: 1;
+
+  }
+  .box-container img{
+    height:  25%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 7px;
+  }
+  /* Media queries for responsive design purposes. */
+  @media (max-width: 1442px){
+    nav{
+      height: 160px;
+    }
   }
   @media (max-width: 952px){
     label.logo{
@@ -92,10 +139,9 @@
     #check:checked ~ ul{
       left: 0;
     }
+    /* Changes color at a certain size. */
+  @media (max-width: 575px){
+      nav{
+          background: #000d1a
+      }
   }
-  section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-  }
-  
